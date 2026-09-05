@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DailyBriefBatch",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["topic", "title", "blurb", "url", "time"],
+    "properties": {
+      "topic": {
+        "type": "string",
+        "enum": ["ai", "tablet", "ce", "supply"]
+      },
+      "title": { "type": "string", "minLength": 1 },
+      "blurb": { "type": "string", "minLength": 1 },
+      "url": { "type": "string", "format": "uri" },
+      "time": { "type": "string", "format": "date-time" }
+    }
+  }
+}
