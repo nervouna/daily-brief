@@ -1,11 +1,12 @@
 name = "daily-brief"
 main = "src/worker.js"
 compatibility_date = "2026-09-05"
+account_id = "7d8cec6892d174fc8925c2bfd43b5c95"
 
 [[kv_namespaces]]
 binding = "BRIEFS"
-id = "REPLACE_WITH_KV_ID"
-preview_id = "REPLACE_WITH_KV_PREVIEW_ID"
+id = "23eca2faffca4b06a87b9a99c49fc470"
+preview_id = "5590158189904d50a7430a02390c915a"
 
 [vars]
 TOPICS = "ai,tablet,ce,supply"
